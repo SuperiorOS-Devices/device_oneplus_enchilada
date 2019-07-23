@@ -21,18 +21,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from enchilada device
 $(call inherit-product, device/oneplus/enchilada/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
+# Inherit some common Superior stuff.
+$(call inherit-product, vendor/superior/config/common.mk)
+
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Maintainer Prop
 PRODUCT_BUILD_PROP_OVERRIDES += \
-DEVICE_MAINTAINERS="Anirudh Gupta"
+DEVICE_MAINTAINERS="Yash Sonawane"
 
-PRODUCT_NAME := aosip_enchilada
+PRODUCT_NAME := superior_enchilada
 PRODUCT_DEVICE := enchilada
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
-PRODUCT_MODEL := ONEPLUS A6000
+PRODUCT_MODEL := ONEPLUS 6
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
