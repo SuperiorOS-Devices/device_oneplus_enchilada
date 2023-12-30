@@ -21,10 +21,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from enchilada device
 $(call inherit-product, device/oneplus/enchilada/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common superioros stuff.
+$(call inherit-product, vendor/superior/config/common.mk)
 
-PRODUCT_NAME := lineage_enchilada
+# Superior Extra Stuffs
+SUPERIOR_OFFICIAL := true
+DEVICE_MAINTAINERS="Vikas Yaduvanshi"
+
+# Superior Extra Stuffs
+SUPERIOR_UDFPS_ANIMATIONS := true
+TARGET_BOOT_ANIMATION_RES := 1080
+BUILD_WITH_GAPPS := true
+
+PRODUCT_NAME := superior_enchilada
 PRODUCT_DEVICE := enchilada
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
