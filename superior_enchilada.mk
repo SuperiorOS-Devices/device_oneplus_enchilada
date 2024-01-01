@@ -25,13 +25,8 @@ $(call inherit-product, device/oneplus/enchilada/device.mk)
 $(call inherit-product, vendor/superior/config/common.mk)
 
 # Superior Extra Stuffs
-SUPERIOR_OFFICIAL := true
-DEVICE_MAINTAINERS="Vikas Yaduvanshi"
-
-# Superior Extra Stuffs
 SUPERIOR_UDFPS_ANIMATIONS := true
 TARGET_BOOT_ANIMATION_RES := 1080
-BUILD_WITH_GAPPS := true
 
 PRODUCT_NAME := superior_enchilada
 PRODUCT_DEVICE := enchilada
