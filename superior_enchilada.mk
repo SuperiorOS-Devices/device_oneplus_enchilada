@@ -27,6 +27,7 @@ $(call inherit-product, vendor/superior/config/common.mk)
 # Superior Extra Stuffs
 SUPERIOR_UDFPS_ANIMATIONS := true
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SUPPORTS_BLUR := true
 
 PRODUCT_NAME := superior_enchilada
 PRODUCT_DEVICE := enchilada
